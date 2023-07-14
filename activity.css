@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: 'Roboto', sans-serif;
+}
+
+body{
+   font-family: var(--ff);
+
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.main__activitry{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: whitesmoke;
+    box-shadow: inset 20px 20px 60px #047574,
+                inset -20px -20px 60px #069f9c;
+}
+
+.home{
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+}
+
+.main__activitry a{
+    width: 50%;
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+    color: black;
+}
+
+.act:hover{
+    
+}
