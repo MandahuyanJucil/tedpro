@@ -6,8 +6,23 @@
     <title>TedPro Enhance Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="indexsendcss.css">
   </head>
   <body>
+    <div class="readmore " id="readmore">
+      <h3 class="h3sss">machines</h4>
+        <button class="btn1" id="btn1">back</button>
+   </div>
+
+   <div class="people" id="People">
+    <h3 class="h3sss">People</h4>
+      <button class="btn1" id="btn2">back</button>
+ </div>
+
+ <div class="activies" id="activies">
+  <h3 class="h3sss">People</h4>
+    <button class="btn1" id="btn3">back</button>
+</div>
 
     <header>
       <a href="index.html" class="brand">TedPro</a>
@@ -18,28 +33,30 @@
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="activity.html">Activities</a>
+      
         </div>
       </div>
     </header>
-
+    
     <section class="home">
+  
       <video class="video-slide active" src="v1.mp4" autoplay muted loop></video>
       <video class="video-slide" src="V2.mp4" autoplay muted loop></video>
       <video class="video-slide" src="v3.mp4" autoplay muted loop></video>
       <div class="content active">
         <h1>Machines.<br><span></span></h1>
         <p>What is a machine short answer? Machine is any device that makes work easier. With the help of machines we can do work by expending less energy and force. Our body parts act as machines.</p>
-        <a href="#">Read More</a>
+        <a href="#" id="machine">Read More</a>
       </div>
       <div class="content">
         <h1>People.<br><span></span></h1>
         <p>What is a machine short answer? Machine is any device that makes work easier. With the help of machines we can do work by expending less energy and force. Our body parts act as machines.</p>
-        <a href="#">Read More</a>
+        <a href="#" id="peoplebtn">Read More</a>
       </div>
       <div class="content">
         <h1>Activities.<br><span></span></h1>
         <p>What is a machine short answer? Machine is any device that makes work easier. With the help of machines we can do work by expending less energy and force. Our body parts act as machines.</p>
-        <a href="#">Read More</a>
+        <a href="#" id="activiesbtn">Read More</a>
       </div>
       <div class="media-icons">
         <a href="https://www.facebook.com/reyanpagala04Noob"><i class="fab fa-facebook-f"></i></a>
@@ -52,6 +69,7 @@
         <div class="nav-btn"></div>
       </div>
     </section>
+ 
 
     <script type="text/javascript"> 
     //Javacript for responsive navigation menu 
@@ -83,6 +101,57 @@
       sliderNav(i); 
     }); 
   }); 
+
+
+
+
+
+   let readmore=document.querySelector("#readmore");
+   let machine=document.querySelector("#machine");
+   let btn1=document.querySelector("#btn1");
+   let People=document.querySelector("#People");
+   let peoplebtn=document.querySelector("#peoplebtn");
+   let activies=document.querySelector("#activies");
+   let btn3=document.querySelector("#btn3");
+   let activiesbtn=document.querySelector("#activiesbtn");
+
+machine.onclick=()=>{
+    readmore.classList.add("open");
+   
+}
+
+peoplebtn.onclick=()=>{
+  People.classList.add("open");
+   
+}
+
+activiesbtn.onclick=()=>{
+  activies.classList.add("open");
+   
+}
+
+btn3.onclick=()=>{
+  activies.classList.remove("open");
+}
+
+btn1.onclick=()=>{
+  readmore.classList.remove("open");
+}
+
+btn2.onclick=()=>{
+  People.classList.remove("open");
+}
+
+
+
+
+
+
+
+
+
+
+
     </script>
     
   </body>

@@ -8,7 +8,7 @@
 }
 
 header{ 
-  z-index: 999; 
+  z-index: 2; 
   position: absolute; 
   top: 0; left: 0; 
   width: 100%; 
@@ -71,7 +71,7 @@ section{
 } 
 
 .home:before{ 
-  z-index: 777; 
+  z-index: 1; 
   content: ''; 
   position: absolute; 
   
@@ -79,7 +79,7 @@ section{
 } 
 
 .home .content{ 
-  z-index: 888; 
+  z-index: 1; 
   color: #fff; 
   width: 70%; 
   margin-top: 50px; 
@@ -119,7 +119,7 @@ section{
 } 
 
 .home .media-icons{ 
-  z-index: 888; 
+  z-index: 1; 
   position: absolute; 
   right: 30px; 
   display: flex; 
@@ -142,7 +142,7 @@ section{
 } 
 
 .home video{ 
-  z-index: 000; 
+  z-index: 1; 
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -152,7 +152,7 @@ section{
 } 
 
 .slider-navigation{ 
-  z-index: 888; 
+  z-index: 1; 
   position: relative; 
   display: flex;
   justify-content: center; 
@@ -195,6 +195,66 @@ section{
   transition: 2s ease; 
   transition-property: clip;
 }
+
+.readmore{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  background-color: #ffffff02;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+}
+
+.h3sss{
+  font-size: 40px;
+  color: #e92626;
+}
+
+.people{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  background-color: #ffffff02;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+}
+
+
+.activies{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  background-color: #ffffff02;
+  backdrop-filter: blur(15px);
+  width: 100%;
+  height: 100%;
+}
+
+
+.open{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1040px){ 
 header{ 
